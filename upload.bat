@@ -7,8 +7,8 @@ for /f "tokens=1-3 delims=/" %%a in ("%date%") do (
     set "commit_date=%%a-%%b-%%c"
 )
 
-git add *.png
+git add .
 git commit -m "算法打卡: %commit_date%"
 git push origin main
-echo 图片上传完成！
+echo 上传完成！
 pause
